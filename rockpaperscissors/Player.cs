@@ -6,18 +6,17 @@ namespace rockpaperscissors
 
         public string chooseOption;
         public int playerScore;
+        
         public Player()
         {
-            this.chooseOption = chooseOption; // i don't know what how to do this
-            this.playerScore = playerScore;
+            
            
         }
         public virtual void PlayerChoice()
         {
-            Console.WriteLine("Your choices are Rock, Paper, Scissors, Spock, Lizard");
-            Console.WriteLine("Please type in your choice");
+            Console.WriteLine("If this shows up something is wrong.(player.cs)");
             chooseOption = Console.ReadLine();
-            return chooseOption;
+           // return chooseOption;
         }
     }
 }
