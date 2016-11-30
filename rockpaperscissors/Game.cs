@@ -18,7 +18,7 @@ namespace rockpaperscissors
             ChooseNumberOfPlayers();
             PlayersTurns();
             CalculateWinner();
-            while (playerOne.playerScore < 2 && (playerTwo.playerScore < 2))
+            while (playerOne.playerScore < 2 && (playerTwo.playerScore < 2))//this is wrong.
             {
                 if (playerOne.playerScore == 2)
                 {
@@ -32,6 +32,7 @@ namespace rockpaperscissors
                 {
 
                 }
+                PlayersTurns();
             }
         }
 
