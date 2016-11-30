@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace rockpaperscissors
 {
-    class Program
+    class Programs
     {
         static void Main(string[] args)
         {
