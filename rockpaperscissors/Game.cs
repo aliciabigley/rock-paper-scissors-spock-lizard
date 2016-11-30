@@ -15,20 +15,48 @@ namespace rockpaperscissors
         {
             DisplayGameWelcome();
             ChooseNumberOfPlayers();
-            PlayAlgorithm();
+            PlayAlgorithm();// working on
+            DeterminWinner()//working on
+
             //while(playerOne.playerScore < 2 || playerTwo.playerScore < 2)
             //{
             //    CalculateWinner();
             //}
         }
 
-        private void PlayAlgorithm()
+        public int PlayAlgorithm() 
+
         {
-           
-            // d(playerchoice) =5(number of options) a(playerOne) + b(playerTwo) = % 5(number of options)
+            int playersOutcome;
+            //while (numberOfWin < 2)//run PlayAlgorithm
+
+            playersOutcome = (5 + (playerOne.chooseOption) - (playerTwo.chooseOption.) % 5); //figure out how to set this up. Once that's done, the DeterminWinner will work?
+
+            // d(playerchoice) =5(number of options) a(playerOne) + b(playerTwo) % 5(number of options)
+            return playersOutcome;
         }
 
-        public void  DisplayGameWelcome()
+        public int DeterminWinner()
+        {
+            if (playerOutcome == 1 || playerOutcome == 3)
+            {
+                Console.WriteLine("Player 1 Wins!");
+            }
+            else if (playerOutcome == 2 || playerOutcome == 4)
+            {
+                Console.WriteLine("Player 2 Wins!");
+            }
+            else if (playerOutcome == 0 || playerOutcome == 0)
+            {
+                Console.WriteLine("Tie!");
+            }
+            else
+            {
+                Console.WriteLine("Opps! Something went wrong. Try again");
+            }
+            //loop/ send to begining?
+        }
+        public void DisplayGameWelcome()
         {
             Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!");
             Console.WriteLine("\n\nYou may have played Rock, Paper, Scissors, Lizard, Spock in the past, but here are the rules.");
@@ -49,7 +77,7 @@ namespace rockpaperscissors
                 playerOne = new Human();
                 playerTwo = new Computer();
                 Console.WriteLine("You vs. the computer.\nGood Luck!");
-                
+
             }
 
             else if (userInput == "2")
@@ -75,6 +103,92 @@ namespace rockpaperscissors
         //        Console.WriteLine("Player One wins!");
         //        playerOne.playerScore++;
         //    }
+        //    else if(playerOne.chooseOption == "Scissors" && playerTwo.chooseOption == "Paper")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Paper" && playerTwo.chooseOption == "Rock")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Lizard" && playerTwo.chooseOption == "Spock")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //    else if(playerOne.chooseOption == "Spock" && playerTwo.chooseOption == "Scissors")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Scissors" && playerTwo.chooseOption == "Lizard")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Lizard" && playerTwo.chooseOption == "Paper")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Paper" && playerTwo.chooseOption == "Spock")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        //    else if(playerOne.chooseOption == "Spock" && playerTwo.chooseOption == "Rock")
+        //    {
+        //        Console.WriteLine("Player One wins!");
+        //        playerOne.playerScore++;
+        //     }
+        // playerTwo
+
+        //    if(playerTwo.chooseOption == "Rock" && playerOne.chooseOption == "Scissors")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //    }
+        //    else if(playerTwo.chooseOption == "Scissors" && playerOne.chooseOption == "Paper")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Paper" && playerOne.chooseOption == "Rock")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Lizard" && playerOne.chooseOption == "Spock")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //    else if(playerTwo.chooseOption == "Spock" && playerOne.chooseOption == "Scissors")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Scissors" && playerOne.chooseOption == "Lizard")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Lizard" && playerOne.chooseOption == "Paper")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Paper" && playerOne.chooseOption == "Spock")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+        //    else if(playerTwo.chooseOption == "Spock" && playerOne.chooseOption == "Rock")
+        //    {
+        //        Console.WriteLine("Player Two wins!");
+        //        playerTwo.playerScore++;
+        //     }
+
         //    else if(playerOne.playerScore)
         //}
         //public void ChooseRock(string acceptance)
@@ -221,5 +335,5 @@ namespace rockpaperscissors
         //    {
         //        Console.WriteLine("Please choose from ROCK, PAPER, SCISSORs, LIZARD, SPOCK ");
         //    }
-        }
     }
+}
