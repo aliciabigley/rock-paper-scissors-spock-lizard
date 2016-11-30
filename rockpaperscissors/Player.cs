@@ -5,7 +5,8 @@ namespace rockpaperscissors
     {
 
         public string chooseOption;
-        public int playerScore;
+        public int playerScore = 0;
+        public string playerChoice;
 
 
         public Player()
@@ -17,10 +18,6 @@ namespace rockpaperscissors
         {
             Console.WriteLine("If this shows up something is wrong.(player.cs)");
            // return chooseOption;
-        }
-        
-        {
-            
         }
     }
 }
